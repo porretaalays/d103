@@ -1,0 +1,76 @@
+body{
+display: grid;
+grid-template-areas: 'navbar navbar navbar navbar'
+                     'header header header header'
+                     'section section section aside'
+                     'footer footer footer footer'; 
+grid-template-rows: 10vh 75vh 60vh 15vh ; 
+grid-template-columns: 25vw 25vw 20vw 30vw; 
+font-family: 'Marvel', sans-serif;
+/* grid-gap: 1vh;                    */
+margin: 0%;
+}
+body::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+nav{
+    align-items: center;
+   background-color: #A60a33;
+    display: flex;
+    justify-content: space-between;
+    grid-area:  navbar;
+    
+}
+nav div img{
+    margin-left: 20px;
+}
+nav div:nth-child(2){
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+ a{
+     color: white;
+    text-decoration: none;
+    font-size: 22pt;
+}
+
+header{
+    grid-area:  header;
+    background-image: url("imagens/vingadores1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+section{
+    grid-area: section;
+    background-color:#010B40;
+}
+section h2{
+    color: white;
+}
+section p {
+    color: white;
+}
+aside{
+
+ grid-area: aside;
+ background-color:#62AFE9;
+ 
+ 
+}
+aside p {
+    font-size: 20pt;
+    margin: 0%;
+    text-align: center;
+}
+aside img{
+    width: 130px;
+}
+footer{
+    grid-area: footer;
+    background-color:yellow;
+}
+
